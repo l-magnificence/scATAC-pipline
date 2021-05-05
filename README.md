@@ -1,15 +1,15 @@
 # scATAC-pipline
 ## SRA file to fastq similar to scRNAseq-pipline
-cd ~/scATAC/GSE139136
 ```
+cd ~/scATAC/GSE139136
 ~/SRAToolkit/sratoolkit.current-ubuntu64/bin/fastq-dump SRR10315835 --split-files --gzip -O ./GSM4131776/
 ```
 
 ## rename the file similar to scRNAseq-pipline 
-Sample1_S1_L001_I1_001.fastq.gz is Sample index (i7)
-Sample1_S1_L001_R1_001.fastq.gz is Transposed DNA
-Sample1_S1_L001_R2_001.fastq.gz is 10x barcode (i5)
-Sample1_S1_L001_R3_001.fastq.gz is Transposed DNA
+Sample1_S1_L001_I1_001.fastq.gz is Sample index (i7)  
+Sample1_S1_L001_R1_001.fastq.gz is Transposed DNA  
+Sample1_S1_L001_R2_001.fastq.gz is 10x barcode (i5)  
+Sample1_S1_L001_R3_001.fastq.gz is Transposed DNA  
 For cellranger-atac count, the I1 FASTQ is optional but the R1, R2, and R3 FASTQ files are all mandatory for the analysis
 
 ## cellranger-atac
