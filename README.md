@@ -2,7 +2,7 @@
 ## SRA file to fastq similar to scRNAseq-pipline
 ```
 cd ~/scATAC/GSE139136
-~/SRAToolkit/sratoolkit.current-ubuntu64/bin/fastq-dump SRR10315835 --split-files --gzip -O ./GSM4131776/
+~/software/SRAToolkit/sratoolkit.2.10.9-ubuntu64/bin/fastq-dump SRR10315835 --split-files --gzip -O ./GSM4131776/
 ```
 
 ## rename the file similar to scRNAseq-pipline 
